@@ -66,9 +66,4 @@ Simple experiments and practice files to understand and manipulate the Document 
 
 ## 🙋‍♀️ About the Author
 
-Created with ❤️ by [Your Name] as part of my front-end development practice journey.
-
----
-
-```markdown
-![Calculator Screenshot](./CALCULATOR/screenshot.png)
+Created with ❤️ by Madhu Harika as part of my front-end development practice journey.
