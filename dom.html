@@ -1,0 +1,104 @@
+<!--TO DO LIST-->
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
+                    <h1>TO DO LIST</h1>
+                    <input type="text" class="form-control" id="taskname" placeholder="Enter tasks you want to add">
+                    
+                    <button class="btn btn-primary" onclick="addtolist() & clr()">ADD</button>
+                    <div id="mytodo" class="text-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<style>
+    body{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.col-md-5{
+    margin-top: 150px !important;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-weight: bolder !important;
+    margin: 20px !important;
+}
+input{
+    display: inline !important;
+    border: 3px solid black !important;
+    width: 100% !important;
+}
+button{
+    margin-top: 10px;
+    margin-left: 180px !important;
+    margin-bottom: 10px;
+
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    display: inline;
+    margin: 10px;
+
+}
+i{
+    color: red;
+    margin: 10px;
+}
+#mytodo{
+    font-weight: bold;
+}
+
+</style>
+<script>
+    function addtolist()
+{
+    var taskname=document.getElementById('taskname').value
+    var tododiv=document.getElementById('mytodo')
+
+    var newtodoitem=document.createElement('div')
+
+    var todoname=document.createElement('li')
+    todoname.innerHTML=taskname
+    var deletebtn=document.createElement('i')
+    deletebtn.classList.add('far')
+    deletebtn.classList.add('fa-trash-alt')
+
+    newtodoitem.appendChild(todoname)
+    newtodoitem.appendChild(deletebtn)
+
+    tododiv.appendChild(newtodoitem)
+
+}   
+
+var tododiv=document.getElementById('mytodo')
+tododiv.addEventListener('click',deleteitem)
+
+function deleteitem(e)
+{
+    const element = e.target
+    if (element.classList[0]=='far')
+    {
+        element.parentElement.remove()
+    }
+   
+}
+function clr()
+{
+    document.getElementById('taskname').value=''
+}
+</script>

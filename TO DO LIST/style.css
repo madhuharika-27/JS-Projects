@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.col-md-5{
+    margin-top: 150px !important;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-weight: bolder !important;
+    margin: 20px !important;
+}
+input{
+    display: inline !important;
+    border: 3px solid black !important;
+    width: 100% !important;
+}
+button{
+    margin-top: 10px;
+    margin-left: 180px !important;
+    margin-bottom: 10px;
+
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    display: inline;
+    margin: 10px;
+
+}
+i{
+    color: red;
+    margin: 10px;
+}
+#mytodo{
+    font-weight: bold;
+}

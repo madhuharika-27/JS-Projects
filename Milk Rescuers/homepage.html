@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .login {
+            text-align: right;
+            color: white;
+        }
+
+        .phone-numbers {
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Milk Rescuers</h1>
+            <div class="phone-numbers">
+                <span>Phone: +91 9090909090</span><br>
+                <span>Emergency: +91 909090909</span>
+            </div>
+            <div class="login">
+                <button onclick="window.open('index.html','_blank')">Login</button>
+            </div>
+    </header>
+
+    <section>
+        <h2>Why is Milk Wasted?</h2>
+        <p>
+            Milk is often wasted in various places due to factors such as overproduction, expiration, and transportation issues. This project aims to reduce milk wastage by facilitating the donation of surplus milk and providing recycled milk to those in need.
+        </p>
+
+        <h2>How You Can Help:</h2>
+        <p>
+            You can contribute to this cause by either donating surplus milk or availing recycled milk. Click the respective buttons below to get started!
+        </p>
+
+        <button onclick="window.open('donate.html','_blank')">Donate Waste Milk</button>
+        <button onclick="window.open('needy.html','_blank')">Request Recycled Milk</button>
+    </section>
+
+</body>
+</html>
